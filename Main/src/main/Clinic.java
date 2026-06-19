@@ -9,7 +9,7 @@ public class Clinic {
     private ArrayList<Patient> patients;
     private ArrayList<Appointment> appointments;
 
-    public Clinic(String clinicName, ArrayList<Doctor> doctors, ArrayList<Patient> patients, ArrayList<Appointment> appointments) {
+    public Clinic(String clinicName) {
         this.clinicName = clinicName;
         doctors = new ArrayList<>();
         patients = new ArrayList<>();
@@ -36,6 +36,14 @@ public class Clinic {
       public void displayPatients(){
         for (int i = 0; i < patients.size(); i++){
             patients.get(i).displayInfo();
+            System.out.println();
+        }
+    }
+      public void displayAppointments()
+    {
+        for (int i = 0; i < appointments.size(); i++)
+        {
+            appointments.get(i).displayInfo();
             System.out.println();
         }
     }
