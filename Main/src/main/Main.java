@@ -16,8 +16,8 @@ public class Main {
         clinic.addDoctor(doctor2);
         clinic.addDoctor(doctor3);
 
-        Patient patient1 = new Patient(201, "Ali Mohammed", 22, "07701234567");
-        Patient patient2 = new Patient(202, "Noor Ahmed", 30, "07807654321");
+        Patient patient1 = new Patient(201, "Ali Mohammed","Male", 22, "07701234567");
+        Patient patient2 = new Patient(202, "Noor Ahmed","Female", 30, "07807654321");
 
         // Add patients
         clinic.addPatient(patient1);

@@ -1,7 +1,7 @@
 package main;
 
 public class Doctor {
-     private int doctorID;
+    private int doctorID;
     private String name;
     private double consultationFee;
 
@@ -11,12 +11,9 @@ public class Doctor {
         setConsultationFee(consultationFee);
     }
     
-    
-
     public int getDoctorID() {
         return doctorID;
     }
-
     public void setDoctorID(int doctorID) {
         this.doctorID = doctorID;
     }
@@ -24,7 +21,6 @@ public class Doctor {
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
@@ -32,7 +28,6 @@ public class Doctor {
     public double getConsultationFee() {
         return consultationFee;
     }
-
     public void setConsultationFee(double consultationFee) {
         if (consultationFee > 0) {
              this.consultationFee = consultationFee;
