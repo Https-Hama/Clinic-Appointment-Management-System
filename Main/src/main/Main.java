@@ -30,18 +30,22 @@ public class Main {
                 case 1: {
                     System.out.print("Enter Patient ID: ");
                     int id = sc.nextInt();
+                    sc.nextLine(); // clear leftover newline after id
+
                     System.out.print("Enter Name: ");
-                    String name = sc.nextLine(); // clear leftover newline
-                    name = sc.nextLine();
+                    String name = sc.nextLine();
+
                     System.out.print("Enter Gender: ");
-                    String gender = sc.nextLine(); // clear leftover newline
-                    name = sc.nextLine();
+                    String gender = sc.nextLine();
+
                     System.out.print("Enter Age: ");
                     int age = sc.nextInt();
+                    sc.nextLine(); // clear leftover newline after age
+
                     System.out.print("Enter Phone: ");
                     String phone = sc.nextLine();
 
-                    Patient patient = new Patient(id, name,gender, age, phone);
+                    Patient patient = new Patient(id, name, gender, age, phone);
                     clinic.addPatient(patient);
                     System.out.println("Patient registered successfully.");
                     break;
