@@ -3,7 +3,7 @@ package main;
 public class Consultant extends Doctor {
     public Consultant(int doctorID, String name)
     {
-        super(doctorID, name, 150);
+        super(doctorID, name, 80.0);
     }
     
     @Override
