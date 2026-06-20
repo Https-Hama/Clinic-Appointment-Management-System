@@ -1,6 +1,6 @@
 package main;
 
-public class Doctor {
+public abstract class Doctor {
     private int doctorID;
     private String name;
     private double consultationFee;
@@ -35,10 +35,6 @@ public class Doctor {
             System.out.println("Consultation fee cannot be negative.");
         }
        }
-    public void displayInfo()
-    {
-        System.out.println("Doctor ID : " + doctorID);
-        System.out.println("Name      : " + name);
-        System.out.println("Fee       : $" + consultationFee);
-    }
+    public abstract void displayInfo();
 }
+

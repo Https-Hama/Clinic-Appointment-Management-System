@@ -5,4 +5,12 @@ public class Consultant extends Doctor {
     {
         super(doctorID, name, 150);
     }
+    
+    @Override
+    public void displayInfo() {
+        System.out.println("Doctor ID: " + getDoctorID());
+        System.out.println("Name: " + getName());
+        System.out.println("Type: Consultant");
+        System.out.println("Consultation Fee: " + getConsultationFee());
+    }
 }
