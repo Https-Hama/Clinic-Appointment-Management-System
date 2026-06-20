@@ -16,7 +16,7 @@ public class Patient {
     }
 
     
-    
+    //get and set => patient ID
     public int getPatientID() {
         return patientID;
     }
@@ -24,6 +24,7 @@ public class Patient {
         this.patientID = patientID;
     }
     
+    //get and set => name
     public String getName() {
         return name;
     }
@@ -31,6 +32,7 @@ public class Patient {
         this.name = name;
     }
     
+    //get and set => gender
     public String getGender() {
         return gender;
     }
@@ -38,14 +40,15 @@ public class Patient {
         this.gender = gender;
     }
     
+    //get and set => age
     public int getAge() {
         return age;
     }
-
     public void setAge(int age) {
         this.age = age;
     }
 
+    //get and set => phone
     public String getPhone() {
         return phone;
     }
